@@ -1,139 +1,131 @@
-# 🐦 Flappy Bird – 2D Game Using C++ and SFML
+# Flappy Bird – C++ Game
 
-## 📌 Project Overview
+## 1. Project Overview
 
-Flappy Bird is a 2D graphical user interface (GUI)-based game developed using **C++** and the **SFML (Simple and Fast Multimedia Library)**.
+Flappy Bird is a simple 2D arcade game developed using C++ and the SFML (Simple and Fast Multimedia Library) framework.
 
-In this game, the player controls a bird that must fly through gaps between pipes without colliding with them. The bird is affected by gravity and continuously falls downward. The player must press the **Spacebar** to make the bird jump and stay in the air.
+The player controls a bird and tries to fly through gaps between moving-style pipe obstacles without colliding with them. The objective is to achieve the highest possible score.
 
-The player earns points by successfully passing through obstacles. If the bird collides with a pipe or the game window boundary, the game ends.
+This project was developed as a Programming Fundamentals (PF) course project.
 
-The game also includes a high-score system that saves the player's best score in a text file, allowing the player to try to beat their previous record.
+## 2. Team Members
 
-This project demonstrates fundamental programming concepts such as variables, conditional statements, loops, functions, structures, event handling, collision detection, and file handling.
-
-## 👨‍💻 Project Members
-
-| Student Name | Roll Number |
+| Name | Student ID |
 |---|---|
 | Muhammad Ayaan Ahsan | 26L-0818 |
 | Abdul Raheem Bhatti | 26L-0819 |
 
-## ✨ Features
+## 3. Features
 
-- **Bird Movement:** The bird jumps whenever the player presses the Spacebar and falls due to gravity.
-- **Pipe Generation:** Pipes continuously appear as obstacles with gaps for the bird to fly through.
-- **Collision Detection:** The game detects collisions between the bird, pipes, and window boundaries.
-- **Score System:** The player's score increases each time the bird successfully passes through a pair of pipes.
-- **High-Score System:** The game saves the highest score in a text file named `highscore.txt` and loads it when the game starts.
-- **Graphical User Interface:** SFML is used to display the bird, pipes, and score.
-- **Game Over:** The game ends when the bird collides with an obstacle or a boundary.
-- **Keyboard Controls:** The player uses the Spacebar to control the bird and Escape to exit the game.
-- **Continuous Gameplay:** Pipes continuously move across the screen, challenging the player to avoid obstacles.
+- Bird movement controlled by keyboard input.
+- Pipe obstacles that challenge the player.
+- Collision detection between the bird and obstacles.
+- Score tracking during gameplay.
+- Game-over screen when the player loses.
+- Restart option to play again.
+- High-score saving using a text file.
 
-## 🛠️ Technologies Used
+## 4. Technologies Used
 
-| Category | Technology |
-|---|---|
-| Programming Language | C++ |
-| Graphics Library | SFML |
-| Development Environment | Microsoft Visual Studio |
-| Platform | Microsoft Windows |
+- **Programming Language:** C++
+- **Graphics Library:** SFML
+- **IDE:** Microsoft Visual Studio
+- **Platform:** Windows
+- **Project Type:** 2D Desktop Game
 
-### Programming Concepts
+## 5. Programming Concepts Used
 
-- Data Types and Variables
-- Conditional Statements (if-else)
-- Loops (for and while)
+This project demonstrates the following programming fundamentals:
+
+- Variables and data types
+- Conditional statements
+- Loops
 - Functions
-- Structures
-- Keyboard Event Handling
-- Collision Detection
-- File Handling with Text Files
+- Classes and objects
+- Event handling
+- Collision detection
+- File handling
+- Basic game logic
 
-## ⚙️ Installation and Setup
+## 6. Project Structure
 
-Follow these steps to install and run the project:
+The repository contains the following main files and folders:
 
-1. Install **Microsoft Visual Studio** and make sure the C++ development tools are included.
-2. Install an SFML version compatible with your Visual Studio version.
-3. Open the `Final Project.sln` file in Visual Studio.
-4. Configure the SFML include and library directories in the project settings.
-5. Select the **x64** build configuration and platform, ensuring that the SFML libraries match the selected configuration.
-6. Make sure `highscore.txt` is present in the working directory. The game will create this file if it does not already exist.
-7. Build the project in Visual Studio and run the application.
+- `Final Project.sln` – Visual Studio solution file.
+- C++ source files (`.cpp`) – Game implementation.
+- Header files (`.h`) – Declarations and game components.
+- `library/SFML/` – SFML library files.
+- `libraries.txt` – Information about the required library version.
+- `screenshots/` – Screenshots of the game.
+- `README.md` – Project documentation.
 
-After completing these steps, the game will open in a graphical window, allowing the player to enjoy Flappy Bird.
+## 7. Requirements
 
-## 🎮 How to Play
+Before running the project, make sure you have:
 
-When the game starts, a window appears displaying the bird and pipes.
+- Windows operating system.
+- Microsoft Visual Studio.
+- A compatible SFML version.
+- The project source code.
+- Required SFML DLL files available when running the application, if needed by your build configuration.
 
-### Keyboard Controls
+## 8. Installation and Setup
 
-| Key | Action |
+Follow these steps to set up the project:
+
+1. Download or clone this repository from GitHub.
+2. Extract the project if you downloaded it as a ZIP file.
+3. Open the `Final Project.sln` file using Microsoft Visual Studio.
+4. Make sure the SFML library is available in the `library/SFML/` folder.
+5. Configure the SFML include and library directories in Visual Studio if they are not already configured.
+6. Make sure the SFML version and architecture match the project configuration.
+7. Check that the required SFML DLL files are available when running the game.
+
+## 9. How to Build and Run
+
+1. Open `Final Project.sln` in Visual Studio.
+2. Select the appropriate build configuration, such as Debug or Release.
+3. Select the correct platform, such as x64, matching your SFML libraries.
+4. Build the project using **Build → Build Solution**.
+5. If the build succeeds, run the application using **Debug → Start Without Debugging** or press `Ctrl + F5`.
+
+## 10. How to Play
+
+1. Start the game.
+2. Use the keyboard control implemented in the game to make the bird fly.
+3. Guide the bird through the gaps between the pipes.
+4. Avoid hitting the pipes or other obstacles.
+5. Try to achieve the highest possible score.
+6. When the game ends, use the restart option to play again.
+
+## 11. Screenshots
+
+### Gameplay
+
+![Flappy Bird Gameplay](screenshots/Interface.png)
+
+### Game Over / Restart Screen
+
+![Flappy Bird Game Over](screenshots/Game-over.png)
+
+## 12. Troubleshooting
+
+| Problem | Possible Solution |
 |---|---|
-| Spacebar | Make the bird jump |
-| Escape | Exit the game |
+| SFML header files not found | Check the SFML include directory in Visual Studio. |
+| Linker errors | Verify that the correct SFML library files are configured. |
+| Missing DLL error | Make sure the required SFML DLL files are available beside the executable or in the appropriate system path. |
+| Game does not run | Check the build configuration and platform settings. |
+| High score is not saved | Check whether the application has permission to write to the required file location. |
 
-### Gameplay Steps
+## 13. Acknowledgements
 
-1. Run the application to open the game window.
-2. The bird appears on the screen while pipes move across the playing area.
-3. Press the Spacebar to make the bird jump.
-4. Continue pressing the Spacebar at appropriate intervals to keep the bird in the air.
-5. Guide the bird through the gaps between the pipes without hitting them.
-6. Each successfully passed pair of pipes increases the score by one point.
-7. Avoid colliding with pipes or the boundaries of the game window.
-8. When a collision occurs, the game ends.
-9. The game compares the current score with the saved high score and updates the record if the current score is higher.
-10. Press Escape to exit the application.
+We would like to thank our instructor for the guidance and support provided throughout this Programming Fundamentals project.
 
-## 🧪 Examples
+We also acknowledge the SFML library and its documentation, which helped us implement the graphical elements of the game.
 
-### Example 1: Bird Movement
-- **Input:** The player presses the Spacebar.
-- **Expected Output:** The bird moves upward briefly before gravity pulls it downward again.
+## 14. Conclusion
 
-### Example 2: Passing Through Pipes
-- **Input:** The player successfully guides the bird through a gap between two pipes.
-- **Expected Output:** The bird continues flying, and the score increases by one point.
+This project helped us understand how C++ programming concepts can be used to develop a simple graphical game. Through this project, we gained practical experience with event handling, game logic, collision detection, graphics, and file handling.
 
-### Example 3: Collision with a Pipe
-- **Input:** The bird collides with an obstacle.
-- **Expected Output:** The game ends, and the final score is displayed if supported by the game interface.
-
-### Example 4: Saving a High Score
-- **Input:** The player finishes a game with a score higher than the previously saved record.
-- **Expected Output:** The new highest score is saved in `highscore.txt` and can be loaded during a future session.
-
-### Example 5: Loading a Previous High Score
-- **Input:** The player launches the game after a previous session.
-- **Expected Output:** The game reads the saved score from `highscore.txt` and displays it if supported by the interface.
-
-### Example 6: Exiting the Game
-- **Input:** The player presses Escape.
-- **Expected Output:** The application closes.
-
-## 📚 Acknowledgements
-
-We would like to acknowledge the developers and maintainers of **SFML** for providing a graphics library that makes it possible to develop graphical applications and games using C++.
-
-### Development Resources
-- SFML Official Website: https://www.sfml-dev.org/
-
-## 📞 Contact Information
-
-**Muhammad Ayaan Ahsan**
-- Roll Number: 26L-0818
-- Email: l260818@lhr.nu.edu.pk
-
-**Abdul Raheem Bhatti**
-- Roll Number: 26L-0819
-- Email: l260819@lhr.nu.edu.pk
-
-## 📝 Project Summary
-
-Flappy Bird is a 2D game developed using C++ and SFML. It provides an interactive graphical interface where players control a bird using keyboard inputs to avoid obstacles, detect collisions, track scores, and save their highest scores in a text file.
-
-This project demonstrates how fundamental programming concepts can be combined to create an interactive and enjoyable game while providing practical experience with C++, graphical programming, and SFML.
+**Thank you for viewing our project!**
