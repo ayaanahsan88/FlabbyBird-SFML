@@ -54,7 +54,7 @@ The repository contains the following main files and folders:
 - `Final Project.sln` – Visual Studio solution file.
 - C++ source files (`.cpp`) – Game implementation.
 - Header files (`.h`) – Declarations and game components.
-- `library/SFML/` – SFML library files.
+- `lib/SFML/` – SFML library files.
 - `libraries.txt` – Information about the required library version.
 - `screenshots/` – Screenshots of the game.
 - `README.md` – Project documentation.
